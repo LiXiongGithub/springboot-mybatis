@@ -39,6 +39,7 @@ spring:
     #useGlobalDataSourceStat: true
     
 mybatis:
+
   #xml方式的mapper配置
   #mapper-locations: classpath:mapper/*.xml
   #注解方式的配置需要在启动类上加注解@MapperScan("com.lx.springboot.springbootmybatis.mapper")
