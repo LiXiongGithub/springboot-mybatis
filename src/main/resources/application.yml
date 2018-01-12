@@ -39,8 +39,15 @@ spring:
     #useGlobalDataSourceStat: true
     
 mybatis:
+  #xml方式的mapper配置
+  #mapper-locations: classpath:mapper/*.xml
+  #注解方式的配置需要在启动类上加注解@MapperScan("com.lx.springboot.springbootmybatis.mapper")
   #定义数据库对应bean
   type-aliases-package: com.lx.springboot.springbootmybatis.vo
   #启动驼峰式映射,数据库表列：user_name,实体类属性：userName 
   configuration:
     map-underscore-to-camel-case: true
+    
+logging:
+  config: classpath:logback.xml
+  path: /workspace/rock/jpa-test/log
